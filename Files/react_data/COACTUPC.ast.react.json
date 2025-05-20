@@ -1,0 +1,750 @@
+{
+  "name": "COACTUPC",
+  "attributes": {
+    "type": "Program"
+  },
+  "children": [
+    {
+      "name": "IDENTIFICATION",
+      "attributes": {
+        "type": "Division"
+      },
+      "children": []
+    },
+    {
+      "name": "ENVIRONMENT",
+      "attributes": {
+        "type": "Division"
+      },
+      "children": [
+        {
+          "name": "INPUT-OUTPUT",
+          "attributes": {
+            "type": "Section"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "DATA",
+      "attributes": {
+        "type": "Division"
+      },
+      "children": [
+        {
+          "name": "WORKING-STORAGE",
+          "attributes": {
+            "type": "Section"
+          },
+          "children": [
+            {
+              "name": "WS-MISC-STORAGE",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-CICS-PROCESSNG-VARS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-RESP-CD",
+              "attributes": {
+                "type": "DataItem",
+                "level": 7,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-REAS-CD",
+              "attributes": {
+                "type": "DataItem",
+                "level": 7,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-TRANID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 7,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-UCTRANS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 7,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-GENERIC-EDITS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-VARIABLE-NAME",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-SIGNED-NUMBER-9V2-X",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-FLG-SIGNED-NUMBER-EDIT",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-SIGNED-NUMBER-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-SIGNED-NUMBER-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-SIGNED-NUMBER-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-ALPHANUM-ONLY",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-ALPHANUM-LENGTH",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-ALPHA-ONLY-FLAGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-ALPHA-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-ALPHA-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-ALPHA-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-ALPHANUM-ONLY-FLAGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-ALPHNANUM-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-ALPHNANUM-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-ALPHNANUM-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-MANDATORY-FLAGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-MANDATORY-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-MANDATORY-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-MANDATORY-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-YES-NO",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-YES-NO-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-YES-NO-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-YES-NO-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUM",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUM-X",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "FILLER",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUMA",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUMA-N",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": null
+              }
+            },
+            {
+              "name": "FILLER",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUMB",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUMB-N",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": null
+              }
+            },
+            {
+              "name": "FILLER",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUMC",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUMC-N",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": null
+              }
+            },
+            {
+              "name": "FILLER",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-NUM-FLGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-IS-INVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONE-IS-VALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-PHONEA-FLG",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEA-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEA-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEA-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-EDIT-US-PHONEB",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEB-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEB-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEB-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-EDIT-PHONEC",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEC-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEC-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-PHONEC-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART1",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART1-N",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": null
+              }
+            },
+            {
+              "name": "INVALID-SSN-PART1",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "THRU",
+              "attributes": {
+                "type": "DataItem",
+                "level": 900,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART2",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART2-N",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART3",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART3-N",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-N",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-FLGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-IS-INVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-IS-VALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART1-FLGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART1-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART1-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART1-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART2-FLGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART2-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART2-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART2-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-EDIT-US-SSN-PART3-FLGS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 20,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART3-ISVALID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART3-NOT-OK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "FLG-EDIT-US-SSN-PART3-BLANK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-CALCULATION-VARS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-DIV-BY",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-DIVIDEND",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-REMAINDER",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": null
+              }
+            },
+            {
+              "name": "WS-CURR-DATE",
+              "attributes": {
+                "type": "DataItem",
+                "level": 10,
+                "picture": "X("
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

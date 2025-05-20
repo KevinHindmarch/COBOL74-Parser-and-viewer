@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBOL AST Viewer (Simple)</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        .program-selector {
+            margin-bottom: 20px;
+        }
+        select {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            min-width: 200px;
+        }
+        .tree-node {
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+        .node-content {
+            padding: 5px;
+            border-radius: 4px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .node-content:hover {
+            background-color: #f0f0f0;
+        }
+        .node-children {
+            margin-left: 20px;
+            border-left: 1px dashed #ccc;
+            padding-left: 10px;
+        }
+        .node-type {
+            font-size: 12px;
+            color: #666;
+            margin-left: 5px;
+        }
+        .node-details {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        .program-info {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e9f7fe;
+            border-left: 4px solid #4285F4;
+            border-radius: 4px;
+        }
+        .toggle-btn {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .program {
+            color: #4285F4;
+        }
+        .division {
+            color: #EA4335;
+        }
+        .section {
+            color: #FBBC05;
+        }
+        .paragraph {
+            color: #34A853;
+        }
+        .statement {
+            color: #7B1FA2;
+        }
+        .dataitem {
+            color: #FF9800;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // Tree Node Component
+        const TreeNode = ({ node, level = 0, onNodeSelect }) => {
+            const [expanded, setExpanded] = useState(level < 2);
+            const hasChildren = node.children && node.children.length > 0;
+            
+            const nodeType = node.attributes?.type?.toLowerCase() || '';
+            
+            const toggleExpand = (e) => {
+                e.stopPropagation();
+                setExpanded(!expanded);
+            };
+            
+            const handleNodeClick = () => {
+                onNodeSelect(node);
+            };
+            
+            return (
+                <div className="tree-node">
+                    <div 
+                        className={`node-content ${nodeType}`}
+                        onClick={handleNodeClick}
+                    >
+                        {hasChildren && (
+                            <button className="toggle-btn" onClick={toggleExpand}>
+                                {expanded ? '−' : '+'}
+                            </button>
+                        )}
+                        <span className={nodeType}>{node.name}</span>
+                        <span className="node-type">({node.attributes?.type})</span>
+                        
+                        {nodeType === 'paragraph' && node.attributes?.statements > 0 && (
+                            <span className="node-type"> - {node.attributes.statements} statements</span>
+                        )}
+                        
+                        {nodeType === 'dataitem' && node.attributes?.picture && (
+                            <span className="node-type"> - PIC {node.attributes.picture}</span>
+                        )}
+                    </div>
+                    
+                    {hasChildren && expanded && (
+                        <div className="node-children">
+                            {node.children.map((child, index) => (
+                                <TreeNode 
+                                    key={index} 
+                                    node={child} 
+                                    level={level + 1}
+                                    onNodeSelect={onNodeSelect}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
+            );
+        };
+
+        // Node Details Component
+        const NodeDetails = ({ node }) => {
+            if (!node) return null;
+            
+            return (
+                <div className="node-details">
+                    <h3>Node Details</h3>
+                    <p><strong>Name:</strong> {node.name}</p>
+                    <p><strong>Type:</strong> {node.attributes?.type}</p>
+                    
+                    {node.attributes?.level && (
+                        <p><strong>Level:</strong> {node.attributes.level}</p>
+                    )}
+                    
+                    {node.attributes?.picture && (
+                        <p><strong>Picture:</strong> {node.attributes.picture}</p>
+                    )}
+                    
+                    {node.attributes?.statements && (
+                        <p><strong>Statements:</strong> {node.attributes.statements}</p>
+                    )}
+                    
+                    {node.attributes?.arguments && (
+                        <p><strong>Arguments:</strong> {node.attributes.arguments}</p>
+                    )}
+                </div>
+            );
+        };
+
+        // Main App Component
+        const App = () => {
+            const [programs, setPrograms] = useState([]);
+            const [selectedProgram, setSelectedProgram] = useState(null);
+            const [treeData, setTreeData] = useState(null);
+            const [loading, setLoading] = useState(false);
+            const [selectedNode, setSelectedNode] = useState(null);
+            
+            // Load the list of programs
+            useEffect(() => {
+                fetch('./react_data/index.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        setPrograms(data);
+                        if (data.length > 0) {
+                            loadProgramData(data[0]);
+                        }
+                    })
+                    .catch(error => console.error('Error loading program index:', error));
+            }, []);
+            
+            // Load program data when a program is selected
+            const loadProgramData = (program) => {
+                setSelectedProgram(program);
+                setLoading(true);
+                setTreeData(null);
+                setSelectedNode(null);
+                
+                fetch(`./react_data/${program.file}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        setTreeData(data);
+                        setLoading(false);
+                    })
+                    .catch(error => {
+                        console.error(`Error loading program data for ${program.name}:`, error);
+                        setLoading(false);
+                    });
+            };
+            
+            const handleProgramChange = (e) => {
+                const programFile = e.target.value;
+                const program = programs.find(p => p.file === programFile);
+                if (program) {
+                    loadProgramData(program);
+                }
+            };
+            
+            return (
+                <div className="container">
+                    <h1>COBOL AST Viewer</h1>
+                    
+                    <div className="program-selector">
+                        <label htmlFor="program-select">Select a program: </label>
+                        <select 
+                            id="program-select"
+                            value={selectedProgram?.file || ''}
+                            onChange={handleProgramChange}
+                        >
+                            {programs.map(program => (
+                                <option key={program.file} value={program.file}>
+                                    {program.name}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    
+                    {selectedProgram && treeData && (
+                        <div className="program-info">
+                            <h2>Program: {selectedProgram.name}</h2>
+                            <p>Divisions: {treeData.children?.length || 0}</p>
+                        </div>
+                    )}
+                    
+                    {loading ? (
+                        <div className="loading">Loading program structure...</div>
+                    ) : (
+                        <>
+                            {treeData && (
+                                <div className="tree-container">
+                                    <TreeNode 
+                                        node={treeData} 
+                                        onNodeSelect={setSelectedNode}
+                                    />
+                                </div>
+                            )}
+                        </>
+                    )}
+                    
+                    {selectedNode && <NodeDetails node={selectedNode} />}
+                </div>
+            );
+        };
+
+        // Render the App
+        const root = ReactDOM.createRoot(document.getElementById('app'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

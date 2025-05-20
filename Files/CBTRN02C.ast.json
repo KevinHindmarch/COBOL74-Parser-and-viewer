@@ -1,0 +1,1319 @@
+{
+  "type": "Program",
+  "position": null,
+  "name": "CBTRN02C",
+  "divisions": {
+    "IDENTIFICATION": {
+      "type": "Division",
+      "position": null,
+      "name": "IDENTIFICATION",
+      "sections": {}
+    },
+    "ENVIRONMENT": {
+      "type": "Division",
+      "position": null,
+      "name": "ENVIRONMENT",
+      "sections": {
+        "INPUT-OUTPUT": {
+          "type": "Section",
+          "position": null,
+          "name": "INPUT-OUTPUT",
+          "paragraphs": {},
+          "entries": []
+        }
+      }
+    },
+    "DATA": {
+      "type": "Division",
+      "position": null,
+      "name": "DATA",
+      "sections": {
+        "FILE": {
+          "type": "Section",
+          "position": null,
+          "name": "FILE",
+          "paragraphs": {},
+          "entries": [
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-TRAN-RECORD",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRAN-ID",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-CUST-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-TRANFILE-REC",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRANS-ID",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-ACCT-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-XREFFILE-REC",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-XREF-CARD-NUM",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-XREF-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-REJS-RECORD",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-REJECT-RECORD",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-VALIDATION-TRAILER",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-ACCTFILE-REC",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-ACCT-ID",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-ACCT-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-TRAN-CAT-BAL-RECORD",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRAN-CAT-KEY",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 10,
+              "name": "FD-TRANCAT-ACCT-ID",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 10,
+              "name": "FD-TRANCAT-TYPE-CD",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 10,
+              "name": "FD-TRANCAT-CD",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-FD-TRAN-CAT-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            }
+          ]
+        },
+        "WORKING-STORAGE": {
+          "type": "Section",
+          "position": null,
+          "name": "WORKING-STORAGE",
+          "paragraphs": {},
+          "entries": [
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "DALYTRAN-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "DALYTRAN-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "DALYTRAN-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TRANFILE-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANFILE-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANFILE-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "XREFFILE-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "XREFFILE-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "XREFFILE-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "DALYREJS-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "DALYREJS-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "DALYREJS-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "ACCTFILE-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "ACCTFILE-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "ACCTFILE-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TCATBALF-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TCATBALF-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TCATBALF-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "IO-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TWO-BYTES-BINARY",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TWO-BYTES-ALPHA",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": "TWO-BYTES-BINARY",
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TWO-BYTES-LEFT",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TWO-BYTES-RIGHT",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "IO-STATUS-04",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STATUS-0401",
+              "picture": "9",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STATUS-0403",
+              "picture": "999",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "APPL-RESULT",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 88,
+              "name": "APPL-AOK",
+              "picture": null,
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 88,
+              "name": "APPL-EOF",
+              "picture": null,
+              "usage": null,
+              "value": "16.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "END-OF-FILE",
+              "picture": "X(",
+              "usage": null,
+              "value": "N",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "ABCODE",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TIMING",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "COBOL-TS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-YYYY",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-MM",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-DD",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-HH",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-MIN",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-SS",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-MIL",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "COB-REST",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "DB2-FORMAT-TS",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FILLER",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": "DB2-FORMAT-TS",
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-YYYY",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-STREEP-1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-MM",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-STREEP-2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-DD",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-STREEP-3",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-HH",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-DOT-1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-MIN",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-DOT-2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-SS",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-DOT-3",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-MIL",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 6,
+              "name": "DB2-REST",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "REJECT-RECORD",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "REJECT-TRAN-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "VALIDATION-TRAILER",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "WS-VALIDATION-TRAILER",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-VALIDATION-FAIL-REASON",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-VALIDATION-FAIL-REASON-DESC",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "WS-COUNTERS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-TRANSACTION-COUNT",
+              "picture": "9(",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-REJECT-COUNT",
+              "picture": "9(",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-TEMP-BAL",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "WS-FLAGS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-CREATE-TRANCAT-REC",
+              "picture": "X(",
+              "usage": null,
+              "value": "N",
+              "redefines": null,
+              "children": []
+            }
+          ]
+        }
+      }
+    },
+    "PROCEDURE": {
+      "type": "Division",
+      "position": null,
+      "name": "PROCEDURE",
+      "sections": {
+        "PARAGRAPHS": {
+          "type": "Section",
+          "position": null,
+          "name": "PARAGRAPHS",
+          "paragraphs": {
+            "GOBACK": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "GOBACK",
+              "statements": []
+            },
+            "1000-PROCESS-TRANSACTIONS": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "1000-PROCESS-TRANSACTIONS",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1100-DALYTRAN-GET-NEXT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "END-OF-FILE = 'N'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ADD",
+                  "arguments": [
+                    "1 TO WS-TRANSACTION-COUNT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "0 TO WS-VALIDATION-FAIL-REASON"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "SPACES TO WS-VALIDATION-FAIL-REASON-DESC"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1500-VALIDATE-TRAN"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "WS-VALIDATION-FAIL-REASON = 0"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "2000-POST-TRANSACTION"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ADD",
+                  "arguments": [
+                    "1 TO WS-REJECT-COUNT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "2500-WRITE-REJECT-REC."
+                  ]
+                }
+              ]
+            },
+            "1100-DALYTRAN-GET-NEXT": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "1100-DALYTRAN-GET-NEXT",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "READ",
+                  "arguments": [
+                    "DALYTRAN-FILE INTO DALYTRAN-RECORD."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "DALYTRAN-STATUS = '00'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "0 TO APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "DALYTRAN-STATUS = '10'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "16 TO APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "12 TO APPL-RESULT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-AOK"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "NEXT",
+                  "arguments": [
+                    "SENTENCE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-EOF"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "'Y' TO END-OF-FILE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'ERROR READING DALYTRAN FILE'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "DALYTRAN-STATUS TO IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "9910-DISPLAY-IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "9999-ABEND-PROGRAM."
+                  ]
+                }
+              ]
+            }
+          },
+          "entries": []
+        }
+      }
+    }
+  }
+}

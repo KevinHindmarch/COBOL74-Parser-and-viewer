@@ -1,0 +1,1207 @@
+{
+  "type": "Program",
+  "position": null,
+  "name": "CBTRN03C",
+  "divisions": {
+    "IDENTIFICATION": {
+      "type": "Division",
+      "position": null,
+      "name": "IDENTIFICATION",
+      "sections": {}
+    },
+    "ENVIRONMENT": {
+      "type": "Division",
+      "position": null,
+      "name": "ENVIRONMENT",
+      "sections": {
+        "INPUT-OUTPUT": {
+          "type": "Section",
+          "position": null,
+          "name": "INPUT-OUTPUT",
+          "paragraphs": {},
+          "entries": []
+        }
+      }
+    },
+    "DATA": {
+      "type": "Division",
+      "position": null,
+      "name": "DATA",
+      "sections": {
+        "FILE": {
+          "type": "Section",
+          "position": null,
+          "name": "FILE",
+          "paragraphs": {},
+          "entries": [
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-TRANFILE-REC",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRANS-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRAN-PROC-TS",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-FILLER",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-CARDXREF-REC",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-XREF-CARD-NUM",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-XREF-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-TRANTYPE-REC",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRAN-TYPE",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRAN-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-TRAN-CAT-RECORD",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRAN-CAT-KEY",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 10,
+              "name": "FD-TRAN-TYPE-CD",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 10,
+              "name": "FD-TRAN-CAT-CD",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-TRAN-CAT-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-REPTFILE-REC",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-DATEPARM-REC",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            }
+          ]
+        },
+        "WORKING-STORAGE": {
+          "type": "Section",
+          "position": null,
+          "name": "WORKING-STORAGE",
+          "paragraphs": {},
+          "entries": [
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TRANFILE-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANFILE-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANFILE-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "CARDXREF-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "CARDXREF-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "CARDXREF-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TRANTYPE-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANTYPE-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANTYPE-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TRANCATG-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANCATG-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TRANCATG-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TRANREPT-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "REPTFILE-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "REPTFILE-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "DATEPARM-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "DATEPARM-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "DATEPARM-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "WS-DATEPARM-RECORD",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-START-DATE",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FILLER",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-END-DATE",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "WS-REPORT-VARS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-FIRST-TIME",
+              "picture": "X",
+              "usage": null,
+              "value": "Y",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-LINE-COUNTER",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-PAGE-SIZE",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-BLANK-LINE",
+              "picture": "X(",
+              "usage": null,
+              "value": "SPACES.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-PAGE-TOTAL",
+              "picture": null,
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-ACCOUNT-TOTAL",
+              "picture": null,
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-GRAND-TOTAL",
+              "picture": null,
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "WS-CURR-CARD-NUM",
+              "picture": "X(",
+              "usage": null,
+              "value": "SPACES.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "IO-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TWO-BYTES-BINARY",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TWO-BYTES-ALPHA",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": "TWO-BYTES-BINARY",
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TWO-BYTES-LEFT",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TWO-BYTES-RIGHT",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "IO-STATUS-04",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STATUS-0401",
+              "picture": "9",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STATUS-0403",
+              "picture": "999",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "APPL-RESULT",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 88,
+              "name": "APPL-AOK",
+              "picture": null,
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 88,
+              "name": "APPL-EOF",
+              "picture": null,
+              "usage": null,
+              "value": "16.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "END-OF-FILE",
+              "picture": "X(",
+              "usage": null,
+              "value": "N",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "ABCODE",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TIMING",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            }
+          ]
+        }
+      }
+    },
+    "PROCEDURE": {
+      "type": "Division",
+      "position": null,
+      "name": "PROCEDURE",
+      "sections": {
+        "PARAGRAPHS": {
+          "type": "Section",
+          "position": null,
+          "name": "PARAGRAPHS",
+          "paragraphs": {
+            "GOBACK": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "GOBACK",
+              "statements": []
+            },
+            "0550-DATEPARM-READ": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "0550-DATEPARM-READ",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "READ",
+                  "arguments": [
+                    "DATE-PARMS-FILE INTO WS-DATEPARM-RECORD."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "DATEPARM-STATUS = '00'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "0 TO APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "DATEPARM-STATUS = '10'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "16 TO APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "12 TO APPL-RESULT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-AOK"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'Reporting from ' WS-START-DATE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-EOF"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "'Y' TO END-OF-FILE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'ERROR READING DATEPARM FILE'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "DATEPARM-STATUS TO IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "9910-DISPLAY-IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "9999-ABEND-PROGRAM."
+                  ]
+                }
+              ]
+            },
+            "1000-PROCESS-TRANSACTIONS": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "1000-PROCESS-TRANSACTIONS",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1000-TRANFILE-GET-NEXT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "END-OF-FILE = 'N'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "TRAN-PROC-TS (1:10) >= WS-START-DATE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "AND",
+                  "arguments": [
+                    "TRAN-PROC-TS (1:10) <= WS-END-DATE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "NEXT",
+                  "arguments": [
+                    "SENTENCE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "GO",
+                  "arguments": [
+                    "TO 1000-PROCESS-TRANSACTIONS-EXIT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "END-OF-FILE = 'N'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "TRAN-RECORD"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "WS-CURR-CARD-NUM NOT= TRAN-CARD-NUM"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "WS-FIRST-TIME = 'N'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1120-WRITE-ACCOUNT-TOTALS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "NEXT",
+                  "arguments": [
+                    "SENTENCE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "TRAN-CARD-NUM TO WS-CURR-CARD-NUM"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "TRAN-CARD-NUM TO FD-XREF-CARD-NUM"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1500-A-LOOKUP-XREF"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "NEXT",
+                  "arguments": [
+                    "SENTENCE."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "END-OF-FILE = 'N'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "TRAN-TYPE-CD OF TRAN-RECORD TO FD-TRAN-TYPE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1500-B-LOOKUP-TRANTYPE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "TRAN-TYPE-CD OF TRAN-RECORD"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "TO",
+                  "arguments": [
+                    "FD-TRAN-TYPE-CD OF FD-TRAN-CAT-KEY"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "TRAN-CAT-CD OF TRAN-RECORD"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "TO",
+                  "arguments": [
+                    "FD-TRAN-CAT-CD OF FD-TRAN-CAT-KEY"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1500-C-LOOKUP-TRANCATG"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1100-WRITE-TRANSACTION-REPORT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'TRAN-AMT ' TRAN-AMT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'WS-PAGE-TOTAL'  WS-PAGE-TOTAL"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ADD",
+                  "arguments": [
+                    "TRAN-AMT TO WS-PAGE-TOTAL"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "WS-ACCOUNT-TOTAL",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1110-WRITE-PAGE-TOTALS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "1110-WRITE-GRAND-TOTALS."
+                  ]
+                }
+              ]
+            },
+            "1000-PROCESS-TRANSACTIONS-EXIT": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "1000-PROCESS-TRANSACTIONS-EXIT",
+              "statements": []
+            },
+            "EXIT": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "EXIT",
+              "statements": []
+            }
+          },
+          "entries": []
+        }
+      }
+    }
+  }
+}

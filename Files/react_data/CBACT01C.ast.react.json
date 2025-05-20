@@ -1,0 +1,812 @@
+{
+  "name": "CBACT01C",
+  "attributes": {
+    "type": "Program"
+  },
+  "children": [
+    {
+      "name": "IDENTIFICATION",
+      "attributes": {
+        "type": "Division"
+      },
+      "children": []
+    },
+    {
+      "name": "ENVIRONMENT",
+      "attributes": {
+        "type": "Division"
+      },
+      "children": [
+        {
+          "name": "INPUT-OUTPUT",
+          "attributes": {
+            "type": "Section"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "DATA",
+      "attributes": {
+        "type": "Division"
+      },
+      "children": [
+        {
+          "name": "FILE",
+          "attributes": {
+            "type": "Section"
+          },
+          "children": [
+            {
+              "name": "FD-ACCTFILE-REC",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "FD-ACCT-ID",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "9("
+              }
+            },
+            {
+              "name": "FD-ACCT-DATA",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "X("
+              }
+            }
+          ]
+        },
+        {
+          "name": "WORKING-STORAGE",
+          "attributes": {
+            "type": "Section"
+          },
+          "children": [
+            {
+              "name": "ACCTFILE-STATUS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "ACCTFILE-STAT1",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "X"
+              }
+            },
+            {
+              "name": "ACCTFILE-STAT2",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "X"
+              }
+            },
+            {
+              "name": "IO-STATUS",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "IO-STAT1",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "X"
+              }
+            },
+            {
+              "name": "IO-STAT2",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "X"
+              }
+            },
+            {
+              "name": "TWO-BYTES-BINARY",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": "9("
+              }
+            },
+            {
+              "name": "TWO-BYTES-ALPHA",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "TWO-BYTES-LEFT",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "X"
+              }
+            },
+            {
+              "name": "TWO-BYTES-RIGHT",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "X"
+              }
+            },
+            {
+              "name": "IO-STATUS-04",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "IO-STATUS-0401",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "9"
+              }
+            },
+            {
+              "name": "IO-STATUS-0403",
+              "attributes": {
+                "type": "DataItem",
+                "level": 5,
+                "picture": "999"
+              }
+            },
+            {
+              "name": "APPL-RESULT",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "APPL-AOK",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "APPL-EOF",
+              "attributes": {
+                "type": "DataItem",
+                "level": 88,
+                "picture": null
+              }
+            },
+            {
+              "name": "END-OF-FILE",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": "X("
+              }
+            },
+            {
+              "name": "ABCODE",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            },
+            {
+              "name": "TIMING",
+              "attributes": {
+                "type": "DataItem",
+                "level": 1,
+                "picture": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PROCEDURE",
+      "attributes": {
+        "type": "Division"
+      },
+      "children": [
+        {
+          "name": "PARAGRAPHS",
+          "attributes": {
+            "type": "Section"
+          },
+          "children": [
+            {
+              "name": "GOBACK",
+              "attributes": {
+                "type": "Paragraph",
+                "statements": 0
+              },
+              "children": []
+            },
+            {
+              "name": "1000-ACCTFILE-GET-NEXT",
+              "attributes": {
+                "type": "Paragraph",
+                "statements": 19
+              },
+              "children": [
+                {
+                  "name": "READ",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-FILE INTO ACCOUNT-RECORD."
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-STATUS = '00'"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "0 TO APPL-RESULT"
+                  }
+                },
+                {
+                  "name": "PERFORM",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "1100-DISPLAY-ACCT-RECORD"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-STATUS = '10'"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "16 TO APPL-RESULT"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "12 TO APPL-RESULT."
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "APPL-AOK"
+                  }
+                },
+                {
+                  "name": "NEXT",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "SENTENCE"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "APPL-EOF"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'Y' TO END-OF-FILE"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ERROR READING ACCOUNT FILE'"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-STATUS TO IO-STATUS"
+                  }
+                },
+                {
+                  "name": "PERFORM",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "9910-DISPLAY-IO-STATUS"
+                  }
+                },
+                {
+                  "name": "PERFORM",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "9999-ABEND-PROGRAM."
+                  }
+                }
+              ]
+            },
+            {
+              "name": "1100-DISPLAY-ACCT-RECORD",
+              "attributes": {
+                "type": "Paragraph",
+                "statements": 12
+              },
+              "children": [
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-ID                 :'   ACCT-ID."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-ACTIVE-STATUS      :'   ACCT-ACTIVE-STATUS."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-CURR-BAL           :'   ACCT-CURR-BAL."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-CREDIT-LIMIT       :'   ACCT-CREDIT-LIMIT."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-CASH-CREDIT-LIMIT  :'   ACCT-CASH-CREDIT-LIM..."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-OPEN-DATE          :'   ACCT-OPEN-DATE."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-EXPIRAION-DATE     :'   ACCT-EXPIRAION-DATE."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-REISSUE-DATE       :'   ACCT-REISSUE-DATE."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-CURR-CYC-CREDIT    :'   ACCT-CURR-CYC-CREDIT..."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-CURR-CYC-DEBIT     :'   ACCT-CURR-CYC-DEBIT."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ACCT-GROUP-ID           :'   ACCT-GROUP-ID."
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'-------------------------------------------------..."
+                  }
+                }
+              ]
+            },
+            {
+              "name": "0000-ACCTFILE-OPEN",
+              "attributes": {
+                "type": "Paragraph",
+                "statements": 13
+              },
+              "children": [
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "8 TO APPL-RESULT."
+                  }
+                },
+                {
+                  "name": "OPEN",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "INPUT ACCTFILE-FILE."
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-STATUS = '00'"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "0 TO APPL-RESULT"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "12 TO APPL-RESULT."
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "APPL-AOK"
+                  }
+                },
+                {
+                  "name": "NEXT",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "SENTENCE"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ERROR OPENING ACCTFILE'"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-STATUS TO IO-STATUS"
+                  }
+                },
+                {
+                  "name": "PERFORM",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "9910-DISPLAY-IO-STATUS"
+                  }
+                },
+                {
+                  "name": "PERFORM",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "9999-ABEND-PROGRAM."
+                  }
+                }
+              ]
+            },
+            {
+              "name": "9000-ACCTFILE-CLOSE",
+              "attributes": {
+                "type": "Paragraph",
+                "statements": 13
+              },
+              "children": [
+                {
+                  "name": "ADD",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "8 TO ZERO GIVING APPL-RESULT."
+                  }
+                },
+                {
+                  "name": "CLOSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-FILE."
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-STATUS = '00'"
+                  }
+                },
+                {
+                  "name": "SUBTRACT",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "APPL-RESULT FROM APPL-RESULT"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "ADD",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "12 TO ZERO GIVING APPL-RESULT."
+                  }
+                },
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "APPL-AOK"
+                  }
+                },
+                {
+                  "name": "NEXT",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "SENTENCE"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ERROR CLOSING ACCOUNT FILE'"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "ACCTFILE-STATUS TO IO-STATUS"
+                  }
+                },
+                {
+                  "name": "PERFORM",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "9910-DISPLAY-IO-STATUS"
+                  }
+                },
+                {
+                  "name": "PERFORM",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "9999-ABEND-PROGRAM."
+                  }
+                }
+              ]
+            },
+            {
+              "name": "9999-ABEND-PROGRAM",
+              "attributes": {
+                "type": "Paragraph",
+                "statements": 4
+              },
+              "children": [
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'ABENDING PROGRAM'."
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "0 TO TIMING."
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "999 TO ABCODE."
+                  }
+                },
+                {
+                  "name": "CALL",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'CEE3ABD'."
+                  }
+                }
+              ]
+            },
+            {
+              "name": "9910-DISPLAY-IO-STATUS",
+              "attributes": {
+                "type": "Paragraph",
+                "statements": 11
+              },
+              "children": [
+                {
+                  "name": "IF",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "IO-STATUS NOT NUMERIC"
+                  }
+                },
+                {
+                  "name": "OR",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "IO-STAT1 = '9'"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "IO-STAT1 TO IO-STATUS-04(1:1)"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "0        TO TWO-BYTES-BINARY"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "IO-STAT2 TO TWO-BYTES-RIGHT"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "TWO-BYTES-BINARY TO IO-STATUS-0403"
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'FILE STATUS IS: NNNN' IO-STATUS-04"
+                  }
+                },
+                {
+                  "name": "ELSE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": ""
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'0000' TO IO-STATUS-04"
+                  }
+                },
+                {
+                  "name": "MOVE",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "IO-STATUS TO IO-STATUS-04(3:2)"
+                  }
+                },
+                {
+                  "name": "DISPLAY",
+                  "attributes": {
+                    "type": "Statement",
+                    "arguments": "'FILE STATUS IS: NNNN' IO-STATUS-04."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

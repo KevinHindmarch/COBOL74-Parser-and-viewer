@@ -1,0 +1,34 @@
+[
+  {
+    "name": "CBACT01C",
+    "file": "CBACT01C.ast.react.json"
+  },
+  {
+    "name": "CBACT02C",
+    "file": "CBACT02C.ast.react.json"
+  },
+  {
+    "name": "CBACT03C",
+    "file": "CBACT03C.ast.react.json"
+  },
+  {
+    "name": "CBCUS01C",
+    "file": "CBCUS01C.ast.react.json"
+  },
+  {
+    "name": "CBTRN01C",
+    "file": "CBTRN01C.ast.react.json"
+  },
+  {
+    "name": "CBTRN02C",
+    "file": "CBTRN02C.ast.react.json"
+  },
+  {
+    "name": "CBTRN03C",
+    "file": "CBTRN03C.ast.react.json"
+  },
+  {
+    "name": "COACTUPC",
+    "file": "COACTUPC.ast.react.json"
+  }
+]

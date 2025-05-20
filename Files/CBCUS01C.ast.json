@@ -1,0 +1,810 @@
+{
+  "type": "Program",
+  "position": null,
+  "name": "CBCUS01C",
+  "divisions": {
+    "IDENTIFICATION": {
+      "type": "Division",
+      "position": null,
+      "name": "IDENTIFICATION",
+      "sections": {}
+    },
+    "ENVIRONMENT": {
+      "type": "Division",
+      "position": null,
+      "name": "ENVIRONMENT",
+      "sections": {
+        "INPUT-OUTPUT": {
+          "type": "Section",
+          "position": null,
+          "name": "INPUT-OUTPUT",
+          "paragraphs": {},
+          "entries": []
+        }
+      }
+    },
+    "DATA": {
+      "type": "Division",
+      "position": null,
+      "name": "DATA",
+      "sections": {
+        "FILE": {
+          "type": "Section",
+          "position": null,
+          "name": "FILE",
+          "paragraphs": {},
+          "entries": [
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "FD-CUSTFILE-REC",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-CUST-ID",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "FD-CUST-DATA",
+              "picture": "X(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            }
+          ]
+        },
+        "WORKING-STORAGE": {
+          "type": "Section",
+          "position": null,
+          "name": "WORKING-STORAGE",
+          "paragraphs": {},
+          "entries": [
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "CUSTFILE-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "CUSTFILE-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "CUSTFILE-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "IO-STATUS",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STAT1",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STAT2",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TWO-BYTES-BINARY",
+              "picture": "9(",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TWO-BYTES-ALPHA",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": "TWO-BYTES-BINARY",
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TWO-BYTES-LEFT",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "TWO-BYTES-RIGHT",
+              "picture": "X",
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "IO-STATUS-04",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STATUS-0401",
+              "picture": "9",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 5,
+              "name": "IO-STATUS-0403",
+              "picture": "999",
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "APPL-RESULT",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 88,
+              "name": "APPL-AOK",
+              "picture": null,
+              "usage": null,
+              "value": "0.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 88,
+              "name": "APPL-EOF",
+              "picture": null,
+              "usage": null,
+              "value": "16.",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "END-OF-FILE",
+              "picture": "X(",
+              "usage": null,
+              "value": "N",
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "ABCODE",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            },
+            {
+              "type": "DataItem",
+              "position": null,
+              "level": 1,
+              "name": "TIMING",
+              "picture": null,
+              "usage": null,
+              "value": null,
+              "redefines": null,
+              "children": []
+            }
+          ]
+        }
+      }
+    },
+    "PROCEDURE": {
+      "type": "Division",
+      "position": null,
+      "name": "PROCEDURE",
+      "sections": {
+        "PARAGRAPHS": {
+          "type": "Section",
+          "position": null,
+          "name": "PARAGRAPHS",
+          "paragraphs": {
+            "GOBACK": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "GOBACK",
+              "statements": []
+            },
+            "1000-CUSTFILE-GET-NEXT": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "1000-CUSTFILE-GET-NEXT",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "READ",
+                  "arguments": [
+                    "CUSTFILE-FILE INTO CUSTOMER-RECORD."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "CUSTFILE-STATUS = '00'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "0 TO APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "CUSTOMER-RECORD"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "CUSTFILE-STATUS = '10'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "16 TO APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "12 TO APPL-RESULT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-AOK"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "NEXT",
+                  "arguments": [
+                    "SENTENCE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-EOF"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "'Y' TO END-OF-FILE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'ERROR READING CUSTOMER FILE'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "CUSTFILE-STATUS TO IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "Z-DISPLAY-IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "Z-ABEND-PROGRAM."
+                  ]
+                }
+              ]
+            },
+            "0000-CUSTFILE-OPEN": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "0000-CUSTFILE-OPEN",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "8 TO APPL-RESULT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "OPEN",
+                  "arguments": [
+                    "INPUT CUSTFILE-FILE."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "CUSTFILE-STATUS = '00'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "0 TO APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "12 TO APPL-RESULT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-AOK"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "NEXT",
+                  "arguments": [
+                    "SENTENCE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'ERROR OPENING CUSTFILE'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "CUSTFILE-STATUS TO IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "Z-DISPLAY-IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "Z-ABEND-PROGRAM."
+                  ]
+                }
+              ]
+            },
+            "9000-CUSTFILE-CLOSE": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "9000-CUSTFILE-CLOSE",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ADD",
+                  "arguments": [
+                    "8 TO ZERO GIVING APPL-RESULT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "CLOSE",
+                  "arguments": [
+                    "CUSTFILE-FILE."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "CUSTFILE-STATUS = '00'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "SUBTRACT",
+                  "arguments": [
+                    "APPL-RESULT FROM APPL-RESULT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ADD",
+                  "arguments": [
+                    "12 TO ZERO GIVING APPL-RESULT."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "APPL-AOK"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "NEXT",
+                  "arguments": [
+                    "SENTENCE"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'ERROR CLOSING CUSTOMER FILE'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "CUSTFILE-STATUS TO IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "Z-DISPLAY-IO-STATUS"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "PERFORM",
+                  "arguments": [
+                    "Z-ABEND-PROGRAM."
+                  ]
+                }
+              ]
+            },
+            "Z-ABEND-PROGRAM": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "Z-ABEND-PROGRAM",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'ABENDING PROGRAM'."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "0 TO TIMING."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "999 TO ABCODE."
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "CALL",
+                  "arguments": [
+                    "'CEE3ABD'."
+                  ]
+                }
+              ]
+            },
+            "Z-DISPLAY-IO-STATUS": {
+              "type": "Paragraph",
+              "position": null,
+              "name": "Z-DISPLAY-IO-STATUS",
+              "statements": [
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "IF",
+                  "arguments": [
+                    "IO-STATUS NOT NUMERIC"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "OR",
+                  "arguments": [
+                    "IO-STAT1 = '9'"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "IO-STAT1 TO IO-STATUS-04(1:1)"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "0        TO TWO-BYTES-BINARY"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "IO-STAT2 TO TWO-BYTES-RIGHT"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "TWO-BYTES-BINARY TO IO-STATUS-0403"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'FILE STATUS IS: NNNN' IO-STATUS-04"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "ELSE",
+                  "arguments": []
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "'0000' TO IO-STATUS-04"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "MOVE",
+                  "arguments": [
+                    "IO-STATUS TO IO-STATUS-04(3:2)"
+                  ]
+                },
+                {
+                  "type": "Statement",
+                  "position": null,
+                  "verb": "DISPLAY",
+                  "arguments": [
+                    "'FILE STATUS IS: NNNN' IO-STATUS-04."
+                  ]
+                }
+              ]
+            }
+          },
+          "entries": []
+        }
+      }
+    }
+  }
+}
