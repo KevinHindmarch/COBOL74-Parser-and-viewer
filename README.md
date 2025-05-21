@@ -4,6 +4,8 @@ A tool for parsing COBOL 74 files, generating Abstract Syntax Trees (AST), and v
 
 Files from here: https://github.com/KevinHindmarch/COBOL74-Banking
 
+Process flow: Input COBOL74 files -> python test_cobol_parser.py [directory] -> Outputted AST Files -> pass these AST files to React -> python ast_to_react.py -> this is now in folder called react_data -> viewer.html will show the files in the react_data -> run python start_server.py
+
 ## Core Components
 
 ### Main Parser (`cobol_parser.py`)
